@@ -42,7 +42,7 @@ Run this On the Terminal:
 minikube dashboard
 </code>
 
-Output:
+The Output:
 
 
 ![k3.PNG](k3.PNG)
