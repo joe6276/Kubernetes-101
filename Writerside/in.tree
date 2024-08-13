@@ -8,4 +8,5 @@
 
     <toc-element topic="starter.md"/>
     <toc-element topic="Introduction.md"/>
+    <toc-element topic="Core-Kubernetes-components-and-architecture.md"/>
 </instance-profile>
