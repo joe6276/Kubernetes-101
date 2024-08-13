@@ -1,9 +1,9 @@
 # Kubernetes
 
-@startmindmap
-* root node
-    * some first level node
-        * second level node
-        * another second level node
-    * another first level node
-      @endmindmap
+<code-block lang="plantuml">
+    @startmindmap
+    * Kubernetes
+        * Introduction to Kubernetes
+        * Kubernetes Architecture and Core Component 
+    @endmindmap
+</code-block>

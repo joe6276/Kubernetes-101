@@ -24,7 +24,10 @@ you will have to learn about the specifics, services and config options of the o
 
 ## What is Kubernetes 
 Kubernetes, also known as K8s, is an open source system for automating deployment, scaling, and management of containerized applications
-<br/>
+
+
+It provides a container runtime, container orchestration, container-centric infrastructure orchestration, self-healing mechanisms, service discovery and load balancing. It’s used for the deployment, scaling, management, and composition of application containers across clusters of hosts.
+
 
 Imagine having a bunch of servers, and you want to run your applications on them without worrying about where exactly they run or how they 
 recover if something goes wrong. Kubernetes takes care of that for you, making sure your applications are always running smoothly.

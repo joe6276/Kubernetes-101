@@ -3,10 +3,11 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="in"
-                 name="Instance Name"
+                 name="K8s"
                  start-page="starter.md">
 
     <toc-element topic="starter.md"/>
     <toc-element topic="Introduction.md"/>
     <toc-element topic="Core-Kubernetes-components-and-architecture.md"/>
+    <toc-element topic="Installation.md"/>
 </instance-profile>

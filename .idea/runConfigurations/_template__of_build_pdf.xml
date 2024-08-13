@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="true" type="StardustRunConfiguration" factoryName="build-pdf">
+    <option name="addCover" value="true" />
+    <option name="copyright" value="@Jonathan Ndambuki" />
+    <option name="description" value="A Guide to Kubernetes" />
+    <option name="folderPath" value="$PROJECT_DIR$" />
+    <option name="footer" />
+    <option name="header" />
+    <option name="instanceId" value="in" />
+    <option name="instanceName" value="Instance Name" />
+    <option name="layout" />
+    <option name="logoPath" value="$USER_HOME$/Desktop/GDG/1. First Containers/Node Js Container/k2.PNG" />
+    <option name="title" value="Kubernetes" />
+    <method v="2" />
+  </configuration>
+</component>
