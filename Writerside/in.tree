@@ -10,4 +10,5 @@
     <toc-element topic="Introduction.md"/>
     <toc-element topic="Core-Kubernetes-components-and-architecture.md"/>
     <toc-element topic="Installation.md"/>
+    <toc-element topic="DeploymentObjects.md"/>
 </instance-profile>
