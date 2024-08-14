@@ -4,11 +4,15 @@
 
 <instance-profile id="in"
                  name="K8s"
-                 start-page="starter.md">
+                 start-page="kub-starter.md">
 
-    <toc-element topic="starter.md"/>
-    <toc-element topic="Introduction.md"/>
-    <toc-element topic="Core-Kubernetes-components-and-architecture.md"/>
-    <toc-element topic="Installation.md"/>
-    <toc-element topic="DeploymentObjects.md"/>
+    <toc-element topic="kub-starter.md"/>
+    <toc-element topic="kub-Introduction.md"/>
+    <toc-element topic="kub-Core-Kubernetes-components-and-architecture.md"/>
+    <toc-element topic="kub-Installation.md"/>
+    <toc-element topic="kub-DeploymentObjects.md"/>
+    <toc-element topic="kub- getting-started.md"/>
+    <toc-element topic="kub-service-object.md"/>
+    <toc-element topic="kub-scaling.md"/>
+    <toc-element topic="kub-updating.md"/>
 </instance-profile>
