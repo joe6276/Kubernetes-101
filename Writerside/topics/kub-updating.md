@@ -67,3 +67,37 @@ or
 ```Docker
 kubectl set image deployment/node-object  kub-node-app=ndambuki/kub-node-app:V1
 ```
+
+## Deployments History
+
+To check the rollout history  Run this command:
+
+```Docker
+kubectl rollout history deployment/node-object
+```
+
+All Revision will be output:
+![image_15.png](image_15.png)
+
+To show what a revision was about run this command:
+```Docker
+kubectl rollout history deployment/node-object --revision=4
+```
+Output:
+![image_16.png](image_16.png)
+
+This will be able to show which image was used among other configurations.
+
+
+You can Shift to a Previous revision using
+```Docker
+kubectl rollout undo  deployment/node-object --to-revision=1  
+```
+
+Now this will show the first version that we had before updating
+![image_17.png](image_17.png)
+
+You can go back to the current version by running:
+```Docker
+kubectl rollout undo  deployment/node-object --to-revision=6 
+```

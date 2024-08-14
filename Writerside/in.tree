@@ -15,4 +15,5 @@
     <toc-element topic="kub-service-object.md"/>
     <toc-element topic="kub-scaling.md"/>
     <toc-element topic="kub-updating.md"/>
+    <toc-element topic="kub-imperative.md"/>
 </instance-profile>
