@@ -16,4 +16,6 @@
     <toc-element topic="kub-scaling.md"/>
     <toc-element topic="kub-updating.md"/>
     <toc-element topic="kub-imperative.md"/>
+    <toc-element topic="kub-declarative.md">
+    </toc-element>
 </instance-profile>
