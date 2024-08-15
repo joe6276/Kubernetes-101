@@ -10,8 +10,6 @@
         * Kubernetes Getting Started
         * Service object     
         * Scaling with Kubernetes
-        * Updating Images 
-
-
+        * Updating Images
     @endmindmap
 </code-block>
