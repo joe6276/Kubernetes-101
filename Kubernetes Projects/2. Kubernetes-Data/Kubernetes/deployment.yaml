@@ -15,6 +15,14 @@ spec:
       containers:
         - name: volumes-container
           image: ndambuki/kub-volume-demo
+          env:
+            - name: FOLDER_NAME
+              # value: 'students'
+              valueFrom:
+                configMapKeyRef: 
+                  name: data-store-env
+                  key: folder
+
           volumeMounts:
             - mountPath: /app/students
               name: student-volume

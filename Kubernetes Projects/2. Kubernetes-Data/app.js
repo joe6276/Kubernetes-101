@@ -6,7 +6,7 @@ const app = express()
 
 app.use(express.json())
 
-const filePath = path.join(__dirname, 'students', 'text.txt')
+const filePath = path.join(__dirname, process.env.FOLDER_NAME, 'text.txt')
 
 
 app.get('/student', (req,res)=>{
