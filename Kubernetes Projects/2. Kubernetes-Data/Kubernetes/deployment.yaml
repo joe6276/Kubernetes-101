@@ -20,8 +20,10 @@ spec:
               name: student-volume
       volumes:
         - name: student-volume
+          persistentVolumeClaim:
+            claimName: students-pvc
           # emptyDir: {}
-          hostPath:
-            path: /data
-            type: DirectoryOrCreate 
+          # hostPath:
+          #   path: /data
+          #   type: DirectoryOrCreate 
 
