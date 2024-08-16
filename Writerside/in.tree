@@ -18,4 +18,6 @@
     <toc-element topic="kub-imperative.md"/>
     <toc-element topic="kub-declarative.md">
     </toc-element>
+    <toc-element topic="kub-volume.md"/>
+    <toc-element topic="kub-host-path.md"/>
 </instance-profile>
