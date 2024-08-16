@@ -20,5 +20,8 @@ spec:
               name: student-volume
       volumes:
         - name: student-volume
-          emptyDir: {}
+          # emptyDir: {}
+          hostPath:
+            path: /data
+            type: DirectoryOrCreate 
 
