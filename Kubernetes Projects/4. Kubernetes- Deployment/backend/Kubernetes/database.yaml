@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: database-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: database
+  template:
+    metadata:
+      labels:
+        app: database      
+    spec:
+      containers:
+        - name: database
+          image: mcr.microsoft.com/mssql/server:2019-latest
+          env:
+            - name: MSSQL_SA_PASSWORD
+              value: Root@2024
+            - name: ACCEPT_EULA
+              value: 'Y'

@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: fruit-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fruit
+  template:
+    metadata:
+      labels:
+        app: fruit
+    spec:
+      containers:
+        - name: fruit
+          image: ndambuki/kub-fruit:latest
+          env:
+            - name: DB_USER 
+              value: 'sa'
+
+            - name: DB_PWD
+              value: 'Root@2024'
+
+            - name: DB_NAME
+              value: 'Fruits'

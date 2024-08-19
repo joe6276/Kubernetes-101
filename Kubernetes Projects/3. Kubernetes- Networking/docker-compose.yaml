@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  database:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: db
+    volumes:
+      - data:/var/opt/mssql 
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Root@2024
+  
+  backend:
+    build: ./backend
+    container_name: backendContainer
+    ports:
+      - 4000:4000
+    depends_on:
+      - database
+volumes:
+  data:
