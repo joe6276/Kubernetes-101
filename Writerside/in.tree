@@ -22,4 +22,5 @@
     <toc-element topic="kub-host-path.md"/>
     <toc-element topic="kub-persistent-volume.md"/>
     <toc-element topic="kub-environment.md"/>
+    <toc-element topic="kub-deployment.md"/>
 </instance-profile>
