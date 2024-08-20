@@ -17,6 +17,8 @@
         * HostPath Volume
         * Persistent Volume
         * Environment Variables
+        * Networking
+        * Deployment with EKS
 
     @endmindmap
 </code-block>
