@@ -1,17 +1,19 @@
+
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: user-deployment
+  name: auth-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: user
+      app: auth
   template:
     metadata:
       labels:
-        app: user
+        app: auth
     spec:
       containers:
-        - name: users-api
-          image: ndambuki/kubernetes-user-api:latest
+        - name: auth-api
+          image: ndambuki/kubernetes-auth-api:latest

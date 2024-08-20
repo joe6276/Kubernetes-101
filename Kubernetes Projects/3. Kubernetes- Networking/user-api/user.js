@@ -14,7 +14,7 @@ app.post('/signup', async (req, res) => {
     try {
         // Send password to hashing service
         // Assuming the hashing service expects a POST request
-        const response = await axios.get(`http://${process.env.AUTH_ADDRESS}/hash/${password}`);
+        const response = await axios.get(`http://${process.env.AUTH_SERVICE_SERVICE_HOST}/hash/${password}`);
         const hashedPW = response.data.hashedPassword; // Adjust based on the actual response format
 
         console.log(email, hashedPW);

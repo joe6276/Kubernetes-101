@@ -204,7 +204,7 @@ spec:
 ```
 Before we can apply the changes:
 
-let's configure our .kube config.file (Copy it somewhere )
+let's configure our .kube config.file (Copy the backup  somewhere )
 
 First configure your AWS: <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html"> here</a>
 
@@ -236,9 +236,7 @@ You can also get the added fruits:
 
 ![image_50.png](image_50.png)
 
-
-To deploy the frontend First
-
+<tip> On your frontend connect to the backend LoadBalancer then push the image </tip>
 
 ### Frontend Service
 
@@ -283,6 +281,5 @@ apply these Changes
 ```Docker
  kubectl apply -f frontend.yaml -f  frontend-service.yaml
 ```
-
-
+And the Application is Live
 ![image_51.png](image_51.png)
