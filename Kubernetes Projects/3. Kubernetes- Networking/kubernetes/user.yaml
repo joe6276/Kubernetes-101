@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user
+  template:
+    metadata:
+      labels:
+        app: user
+    spec:
+      containers:
+        - name: users-api
+          image: ndambuki/kubernetes-user-api:latest
+          env:
+            - name: AUTH_ADDRESS
+              value: localhost
+        - name: users-auth
+          image: ndambuki/kubernetes-auth-api:latest
