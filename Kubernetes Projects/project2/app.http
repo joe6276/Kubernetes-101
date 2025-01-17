@@ -1,0 +1,14 @@
+###
+
+GET http://localhost:8000/books
+
+
+###
+
+POST  http://localhost:8000/books
+Content-Type: application/json
+
+{
+    "name":"The Almanack of Jonathan",
+    "price":1000
+}

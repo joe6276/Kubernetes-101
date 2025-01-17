@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: books-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: books
+  template:
+    metadata:
+      labels:
+        app: books
+    spec:
+      containers:
+        - name: books
+          image: ndambuki/node1test
+          env:
+            - name: DB_USER
+              value: 'sa'
+
+            - name: DB_PWD
+              value: 'Root@2025'
+
+            - name: DB_NAME
+              value: 'Fancy'
+
+            - name: DB_SERVER
+              value: "database-service.default"

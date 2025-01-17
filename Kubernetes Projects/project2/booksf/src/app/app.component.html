@@ -1,0 +1,38 @@
+
+
+
+
+<h1>
+  Books Place
+</h1>
+
+<form #form="ngForm"  (ngSubmit)="onFormSubmit(form)">
+
+  <div class="form-group">
+    <label for="BookTitle">Book Title</label>
+    <input type="text"  class="form-control" id="studio"
+           [(ngModel)]="bookTitle" name="title">
+  </div>
+
+
+  <div class="form-group">
+    <label for="Book Price">Book Price</label>
+    <input type="number"  class="form-control" id="price"
+           [(ngModel)]="bookPrice" name="price">
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+<div class="app">
+              
+
+<div *ngFor="let item of books">
+  <div class="item">
+    <img src="https://cdn.pixabay.com/photo/2018/05/10/08/59/book-3387071_1280.jpg" alt="">
+    <h1>{{item.Name}}</h1>
+    <p>{{item.Price}}</p>
+</div>
+</div>
+  </div>
+<router-outlet />
